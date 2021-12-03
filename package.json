@@ -4,15 +4,8 @@
     "description": "test",
     "main": "index.js",
     "scripts": {
-        "start": "node index",
-        "dev": "nodemon index"
+        "start": "node index"
     },
     "author": "roflanmen",
-    "license": "ISC",
-    "dependencies": {
-        "uuid": "^8.3.2"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.15"
-    }
+    "license": "ISC"
 }
