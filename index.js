@@ -1,5 +1,5 @@
 const http = require("http");
 http.createServer((req, res) => {
-    console.log(req.headers.host);
+    console.log(JSON.stringify(req));
     res.end(req.headers.host);
 }).listen(process.env.PORT || 5000);
