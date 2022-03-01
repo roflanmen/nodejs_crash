@@ -1,4 +1,5 @@
 const http = require("http");
 http.createServer((req, res) => {
-    res.end("pososi");
-}).listen(process.env.PORT);
+    console.log(req.headers.host);
+    res.end(req.headers.host);
+}).listen(process.env.PORT || 5000);
