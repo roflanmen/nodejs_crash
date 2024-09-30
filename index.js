@@ -1,9 +1,7 @@
 const http = require("http");
 http.createServer((req, res) => {
     reqs++;
-    if (reqs % 1000 == 0) {
-        console.log(reqs);
-    }
+    res.write("Hello World! You are visitor number " + reqs);
     res.end();
-}).listen(process.env.PORT || 5000);
+}).listen(process.env.PORT || 80);
 var reqs = 0;
